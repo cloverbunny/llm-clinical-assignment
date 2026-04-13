@@ -35,25 +35,72 @@ llm-clinical-assignment/
     └── sample_output.json             # Expected output format
 ```
 
-## 🚀 Quick Start
+---
 
-1. **Clone this repository:**
-   ```bash
-   git clone <repo-url>
-   cd llm-clinical-assignment
-   ```
+## ✅ Requirements
 
-2. **Set up a local LLM**
-   - Ollama (recommended): `ollama pull llama2`
-   - LM Studio, LLaMA.cpp, or vLLM also work
+### Code
 
-3. **Read the assignment** (below) and the clinical notes in [assignment/clinical_notes/](assignment/clinical_notes/)
+- [ ] Load a local LLM (Ollama, LM Studio, LLaMA.cpp, or vLLM)
+- [ ] Read a clinical note from a file or stdin
+- [ ] Send a well-crafted prompt to the LLM
+- [ ] Parse the LLM response as JSON
+- [ ] Validate the output structure
+- [ ] Handle errors gracefully (invalid JSON, timeouts, LLM failure)
+- [ ] Output valid JSON to stdout or a file
 
-4. **Create your solution** and submit a GitHub repo with your results
+### Code Quality
+
+- [ ] Code is readable with clear variable names
+- [ ] Comments explain non-obvious logic
+- [ ] No hardcoded paths or API keys
+- [ ] Follows standard conventions for your language
+
+### Documentation
+
+- [ ] **README.md** in your submission folder explains:
+  - How to set up your environment
+  - How to run your code
+  - Which local LLM you used and why
+  - Any assumptions or limitations
+  - Example command: `python solution.py < note.txt > output.json`
+
+### Testing
+
+- [ ] Test your code against all 10 clinical notes in [assignment/clinical_notes/](assignment/clinical_notes/)
+- [ ] Save output to `output/results.json`
+- [ ] Verify JSON is valid (use `jq` or Python's `json` module)
+
+### Reflection
+
+- [ ] Write a brief **notes/REFLECTION.md** explaining:
+  - What went well
+  - What was challenging
+  - How you iterated on your prompt
+  - Any medications the LLM hallucinated or missed
+  - How you'd improve this in production
 
 ---
 
-## 🏥 The Task: Medication Extraction
+## 📤 Submission
+
+Create a GitHub repo with this sort of structure:
+
+```
+candidate_<your_name>/
+├── code/
+│   ├── solution.py          # (or .js, .go, etc.)
+│   ├── requirements.txt     # dependencies
+│   └── README.md            # how to run
+├── output/
+│   └── results.json         # your output for all 10 notes
+└── notes/
+    └── REFLECTION.md        # your thoughts/analysis
+```
+
+---
+
+## 🏥 Example Task: Medication Extraction
 
 ### Input
 
@@ -109,67 +156,6 @@ Allergies: NKDA
 ```
 
 ---
-
-## ✅ Requirements
-
-### Code
-
-- [ ] Load a local LLM (Ollama, LM Studio, LLaMA.cpp, or vLLM)
-- [ ] Read a clinical note from a file or stdin
-- [ ] Send a well-crafted prompt to the LLM
-- [ ] Parse the LLM response as JSON
-- [ ] Validate the output structure
-- [ ] Handle errors gracefully (invalid JSON, timeouts, LLM failure)
-- [ ] Output valid JSON to stdout or a file
-
-### Code Quality
-
-- [ ] Code is readable with clear variable names
-- [ ] Comments explain non-obvious logic
-- [ ] No hardcoded paths or API keys
-- [ ] Follows standard conventions for your language
-
-### Documentation
-
-- [ ] **README.md** in your submission folder explains:
-  - How to set up your environment
-  - How to run your code
-  - Which local LLM you used and why
-  - Any assumptions or limitations
-  - Example command: `python solution.py < note.txt > output.json`
-
-### Testing
-
-- [ ] Test your code against all 10 clinical notes in [assignment/clinical_notes/](assignment/clinical_notes/)
-- [ ] Save output to `output/results.json`
-- [ ] Verify JSON is valid (use `jq` or Python's `json` module)
-
-### Reflection
-
-- [ ] Write a brief **notes/REFLECTION.md** explaining:
-  - What went well
-  - What was challenging
-  - How you iterated on your prompt
-  - Any medications the LLM hallucinated or missed
-  - How you'd improve this in production
-
----
-
-## 📤 Submission
-
-Create a GitHub repo with this structure:
-
-```
-candidates/<your_name>/
-├── code/
-│   ├── solution.py          # (or .js, .go, etc.)
-│   ├── requirements.txt     # dependencies
-│   └── README.md            # how to run
-├── output/
-│   └── results.json         # your output for all 10 notes
-└── notes/
-    └── REFLECTION.md        # your analysis
-```
 
 **Example README:**
 ```markdown
