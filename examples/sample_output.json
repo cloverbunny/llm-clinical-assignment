@@ -1,0 +1,46 @@
+{
+  "medications": [
+    {
+      "name": "Albuterol",
+      "dose": "Not specified",
+      "frequency": "BID",
+      "indication": "COPD"
+    },
+    {
+      "name": "Tiotropium",
+      "dose": "Not specified",
+      "frequency": "daily",
+      "indication": "COPD"
+    },
+    {
+      "name": "Metformin",
+      "dose": "1000 mg",
+      "frequency": "BID",
+      "indication": "Type 2 diabetes"
+    },
+    {
+      "name": "Atorvastatin",
+      "dose": "40 mg",
+      "frequency": "daily",
+      "indication": "Hyperlipidemia"
+    },
+    {
+      "name": "Lisinopril",
+      "dose": "20 mg",
+      "frequency": "daily",
+      "indication": "Hypertension"
+    },
+    {
+      "name": "Omeprazole",
+      "dose": "20 mg",
+      "frequency": "daily",
+      "indication": "GERD"
+    },
+    {
+      "name": "Sertraline",
+      "dose": "100 mg",
+      "frequency": "daily",
+      "indication": "Anxiety"
+    }
+  ]
+}
