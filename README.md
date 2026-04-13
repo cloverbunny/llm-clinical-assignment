@@ -14,6 +14,25 @@ This assignment asks you to build a small Python (or JavaScript/Go/etc.) applica
 
 ## 📁 Repository Structure
 
+```
+llm-clinical-assignment/
+├── README.md
+├── assignment/
+│   ├── ASSIGNMENT.md                  # Task description and requirements
+│   └── clinical_notes/                # Test cases (10 clinical H&P notes)
+│       ├── case_01_sepsis.md
+│       ├── case_02_mi.md
+│       ├── case_03_head_trauma.md
+│       ├── case_04_pancreatitis.md
+│       ├── case_05_meningitis.md
+│       ├── case_06_aki.md
+│       ├── case_07_liver_failure.md
+│       ├── case_08_aortic_dissection.md
+│       ├── case_09_dka.md
+│       └── case_10_gi_bleed.md
+└── examples/
+    └── sample_output.json             # Expected output format
+```
 
 ## 🚀 Quick Start
 
@@ -25,13 +44,13 @@ This assignment asks you to build a small Python (or JavaScript/Go/etc.) applica
    cd llm-clinical-assignment
    ```
 
-2. **Set up a local LLM** (see [SETUP.md](SETUP.md) for detailed instructions)
+2. **Set up a local LLM**
    - Ollama (recommended): `ollama pull llama2`
    - LM Studio, LLaMA.cpp, or vLLM also work
 
 3. **Read the assignment:**
    - [assignment/ASSIGNMENT.md](assignment/ASSIGNMENT.md)
-   - [assignment/CLINICAL_NOTES.md](assignment/CLINICAL_NOTES.md)
+   - [assignment/clinical_notes/](assignment/clinical_notes/) — 10 clinical H&P notes
 
 4. **Create your solution:**
 
